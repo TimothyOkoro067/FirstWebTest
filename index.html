@@ -1,25 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="mystyle.css" />
+    <link scr="script" href="app.js" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Website</title>
   </head>
+  <!--Navigatin Section-->
   <body>
-    <style>
-      img {
-        width: 500px;
-        border-radius: 100px;
-        float: left;
-        margin-right: 10px;
-      }
-      .username {
-        font-weight: bold;
-      }
-    </style>
-    <img src="images/IMG_4853.JPG" />
-    <p class="username" style="color: black">@TimKrfr</p>
-    <p style="color: red">My first html project?</p>
+    <nav class="navbar">
+      <div class="navbar__container" onclick="window.location.href='index.html'">
+        <img
+            id="navbar__logo"
+            src="images/1200px-Unreal_Engine_Logo.svg.png"
+        /></a>
+        <div clas="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar_item">
+            <a href="/" class="navbar__links"> Home </a>
+          </li>
+          <li class="navbar_item">
+            <a href="Demo.html" class="navbar__links">Demo</a>
+          </li>
+          <li class="navbar_item">
+            <a href="/" class="navbar__links">Console</a>
+          </li>
+          <li class="navbar_btn">
+            <a href="/" class="button">JOIN</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--Main Section-->
+
+    <div class="main">
+      <div class="main__container">
+        <div class="main__content">
+          <h1 class="gradient__text">Unreal Engine 5: THE FUTURE OF GAMING</h1>
+          <p class="gradient__msg">
+            Explore the new age of Video Games and Animation
+          </p>
+          <button class="Start__btn" onclick="window.location.href='Demo.html'">
+            START
+          </button>
+
+        <button class="About__btn" onclick="window.location.href='https://www.unrealengine.com/'">
+            LEARN
+          </button>
+        </div>
+        <div class="main__txt--container"></div>
+      </div>
+    </div>
   </body>
 </html>
